@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NYITTutorAssistant</string>
+    <string name="forLoopLink1"><a href="https://www.google.com/">For Loop Link 1</a></string>
+    <string name="forLoopLink2"><a href="https://www.google.com/">For Loop Link 2</a></string>
+    <string name="forLoopLink3"><a href="https://www.google.com/">For Loop Link 3</a></string>
+
+    <string name="whileLoopLink1"><a href="https://www.google.com/">While Loop Link 1</a></string>
+    <string name="whileLoopLink2"><a href="https://www.google.com/">While Loop Link 2</a></string>
+
+    <string name="classDecLink1"><a href="https://www.google.com/">Class Declaration Link 1</a></string>
+    <string name="classDecLink2"><a href="https://www.google.com/">Class Declaration Link 2</a></string>
+    <string name="classDecLink3"><a href="https://www.google.com/">Class Declaration Link 3</a></string>
+
+</resources>
