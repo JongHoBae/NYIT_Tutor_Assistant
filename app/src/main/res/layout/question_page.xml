@@ -34,9 +34,11 @@
 
     <EditText
         android:id="@+id/titleBox"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/textbox"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title"
@@ -55,7 +57,7 @@
 
     <Spinner
         android:id="@+id/tutorSpinner"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
@@ -76,9 +78,10 @@
 
     <EditText
         android:id="@+id/hoursBox"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/textbox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hours"
@@ -98,12 +101,15 @@
     <EditText
         android:id="@+id/codeBox"
         android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_height="200dp"
         android:textSize="20dp"
+        android:background="@drawable/textbox"
+        android:scrollbars="vertical"
+        android:gravity="top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/code"
-        android:inputType="date"/>
+        android:inputType="textMultiLine"/>
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
@@ -120,10 +126,13 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:textSize="20dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/textbox"
+        android:gravity="left"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/description"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         />
     <Button
         android:id="@+id/finish"
