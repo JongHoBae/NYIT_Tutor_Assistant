@@ -24,7 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".AskQActivity" />
-        <activity android:name=".QuestionPage" />
+        <activity
+            android:name=".QuestionPage"
+            android:windowSoftInputMode="adjustResize|adjustPan|stateAlwaysVisible"
+            />
     </application>
 
 </manifest>
