@@ -11,6 +11,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.activity.ComponentActivity;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
 public class AskQActivity extends ComponentActivity implements AdapterView.OnItemSelectedListener {
 
@@ -34,8 +36,8 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(AskQActivity.this, QuestionPage.class);
+                intent.putExtra("category", dropdown.getSelectedItem().toString());
                 startActivity(intent);
             }
         });
@@ -52,10 +54,6 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
 
         TextView l3 = (TextView) findViewById(R.id.link3);
         l3.setMovementMethod(LinkMovementMethod.getInstance());
-
-
-
-
 
         if(position==0){
             l1.setVisibility(View.GONE);
@@ -96,7 +94,5 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
+    public void onNothingSelected(AdapterView<?> parent) {}
 }

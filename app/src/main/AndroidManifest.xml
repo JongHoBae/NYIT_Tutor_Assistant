@@ -26,8 +26,11 @@
         <activity android:name=".AskQActivity" />
         <activity
             android:name=".QuestionPage"
-            android:windowSoftInputMode="adjustResize|adjustPan|stateAlwaysVisible"
+            android:windowSoftInputMode="adjustPan"
             />
+        <activity android:name=".BrowseQuestionsActivity" />
+        <activity android:name=".BrowseTitleActivity" />
+        <activity android:name=".QuestionViewActivity" />
     </application>
 
 </manifest>
