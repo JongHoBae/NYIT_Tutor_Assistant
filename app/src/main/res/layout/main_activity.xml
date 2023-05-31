@@ -36,8 +36,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="80dp" />
 
-
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"

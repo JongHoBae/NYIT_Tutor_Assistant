@@ -11,8 +11,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.activity.ComponentActivity;
-import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProvider;
 
 public class AskQActivity extends ComponentActivity implements AdapterView.OnItemSelectedListener {
 
@@ -24,7 +22,7 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
         //get the spinner from the xml.
         Spinner dropdown = findViewById(R.id.category);
 //create a list of items for the spinner.
-        String[] items = new String[]{"Select Category", "For Loop", "While Loop", "Class Declaration"};
+        String[] items = new String[]{"Select Category", "For Loop", "While Loop", "Class Declaration", "Others"};
 //create an adapter to describe how the items are displayed, adapters are used in several places in android.
 //There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
@@ -60,8 +58,6 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
             l2.setVisibility(View.GONE);
             l3.setVisibility(View.GONE);
             next.setEnabled(false);
-
-
         }
         else if(position==1){
             l1.setVisibility(View.VISIBLE);
@@ -89,6 +85,15 @@ public class AskQActivity extends ComponentActivity implements AdapterView.OnIte
             l1.setText(R.string.classDecLink1);
             l2.setText(R.string.classDecLink2);
             l3.setText(R.string.classDecLink3);
+            next.setEnabled(true);
+        }
+
+        else if(position == 4){
+            l1.setVisibility(View.VISIBLE);
+            l2.setVisibility(View.VISIBLE);
+            l3.setVisibility(View.GONE);
+            l1.setText(R.string.other1);
+            l2.setText(R.string.other2);
             next.setEnabled(true);
         }
     }
